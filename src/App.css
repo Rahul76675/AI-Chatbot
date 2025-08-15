@@ -1,0 +1,68 @@
+/* Error banner styles - Add to your existing App.css */
+.error-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #fef2f2;
+  border-bottom: 1px solid #fecaca;
+  color: #dc2626;
+  font-size: 0.875rem;
+}
+
+.dark .error-banner {
+  background-color: #7f1d1d;
+  border-color: #991b1b;
+  color: #fca5a5;
+}
+
+.error-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Light Mode Background */
+.light-mode {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+}
+
+/* Dark Mode Background */
+.dark-mode {
+  background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
+}
+
+/* Blurred Shapes */
+.bg-shapes {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.35;
+}
+
+.shape1 {
+  background: #38c6fa;
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: -100px;
+}
+
+.shape2 {
+  background: #4f8cff;
+  width: 400px;
+  height: 400px;
+  bottom: -150px;
+  right: -100px;
+}
